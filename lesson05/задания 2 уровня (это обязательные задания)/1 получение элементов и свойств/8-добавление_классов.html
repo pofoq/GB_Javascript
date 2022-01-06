@@ -19,7 +19,14 @@
     -->
 
     <script>
-        
+        'use strict';
+        const arr = document.getElementsByTagName('b');
+        for (var i = 0; i < arr.length; i++) {
+            let b = arr[i];
+            if (!b.classList.contains('sign')) {
+                b.classList.add('sign');
+            }
+        }
     </script>
 </body>
 </html>

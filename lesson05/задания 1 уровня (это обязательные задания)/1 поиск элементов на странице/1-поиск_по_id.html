@@ -15,7 +15,23 @@
     и выведите ее в консоль. -->
 
     <script>
-        
+        'use strict;';
+
+        //solution 1
+        let link = document.getElementById("four");
+        console.log(link);
+
+        //solution 2
+        let links = document.links;
+        let el = null;
+
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].id == "four") {
+                el = links[i];
+                break;
+            }
+        }
+        console.log(el);
     </script>
 </body>
 </html>

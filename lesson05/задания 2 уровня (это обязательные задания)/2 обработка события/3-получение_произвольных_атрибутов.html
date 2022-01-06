@@ -6,20 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="modal fade" 
-         id="exampleModal" 
-         tabindex="-1" 
-         aria-labelledby="exampleModalLabel" 
+    <div class="modal fade"
+         id="exampleModal"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
          aria-hidden="true">
-		текст
+        текст
     </div>
 
-    <!-- 
+    <!--
     Задание.
     1. Сохраните ссылку на div в переменную
     2. Назначьте div'у обработку клика, у функции-обработчика объявите параметр event.
     3. При клике из event.target c помощью getAttribute() получите значение
     каждого атрибута и выведите в консоль.
     -->
+
+    <script>
+        'use strict';
+        let div = document.querySelector('div');
+        div.addEventListener('click', function (event) {
+            let attributes = event.target.attributes;
+            for (var i = 0; i < attributes.length; i++) {
+                console.log(attributes[i].value);
+            }
+        });
+    </script>
+
 </body>
 </html>

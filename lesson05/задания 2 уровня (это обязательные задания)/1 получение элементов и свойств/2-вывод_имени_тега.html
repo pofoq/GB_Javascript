@@ -17,7 +17,11 @@
     -->
 
     <script>
-
+        'use strict';
+        const arr = document.getElementsByClassName('one');
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i].tagName);
+        }
     </script>
 </body>
 </html>
