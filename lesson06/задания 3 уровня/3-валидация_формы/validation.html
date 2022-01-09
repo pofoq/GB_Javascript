@@ -36,7 +36,22 @@
      -->
 
     <script>
-        
+        'use strict';
+        let formEl = document.querySelector('form');
+        let inputs = formEl.querySelectorAll('input');
+        let btn = formEl.querySelector('button');
+
+        formEl.addEventListener('submit', function (event) {
+            inputs.forEach(function (input) {
+                if (input.value.length == 0) {
+                    input.style.borderColor = 'red';
+                    event.preventDefault();
+                }
+                else {
+                    input.style.borderColor = 'black';
+                }
+            });
+        });
     </script>
 </body>
 </html>

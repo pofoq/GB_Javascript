@@ -41,7 +41,15 @@
     -->
 
     <script>
-        
+        'use strict';
+        let images = document.querySelectorAll('img');
+        setTimeout(function () {
+            for (let i = 0; i < images.length; i++) {
+                let img = images[i];
+                img.setAttribute('src', `images/${i + 1}.jpg`);
+            }
+        }, 3000);
+
     </script>
 </body>
 </html>

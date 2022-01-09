@@ -19,7 +19,14 @@
     -->
 
     <script>
-        
+        'use strict';
+        let span = document.querySelector('span');
+        let fromEL = document.getElementById('from');
+        fromEL.addEventListener('change', function (event) {
+            //span.textContent = event.target.value;
+            //span.innerText = event.target.value;
+            span.insertAdjacentText('afterbegin', event.target.value);
+        });
     </script>
 </body>
 </html>

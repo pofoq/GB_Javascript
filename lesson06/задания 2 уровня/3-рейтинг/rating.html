@@ -31,23 +31,50 @@
     -->
 
     <script>
-        let firstStar = document.getElementById('first');
-        let secondStar = document.getElementById('second');
-        let thirdStar = document.getElementById('third');
-        let fourthStar = document.getElementById('fourth');
-        let fifthStar = document.getElementById('fifth');
+        //let firstStar = document.getElementById('first');
+        //let secondStar = document.getElementById('second');
+        //let thirdStar = document.getElementById('third');
+        //let fourthStar = document.getElementById('fourth');
+        //let fifthStar = document.getElementById('fifth');
 
         let goldenClass = 'golden';
 
-        firstStar.addEventListener('mouseover', function() {
-            if (!firstStar.classList.contains(goldenClass)) {
-                firstStar.classList.add(goldenClass);
+        //firstStar.addEventListener('mouseover', function() {
+        //    if (!firstStar.classList.contains(goldenClass)) {
+        //        firstStar.classList.add(goldenClass);
+        //    }
+        //});
+
+        //firstStar.addEventListener('mouseout', function() {
+        //    firstStar.classList.remove(goldenClass);
+        //});
+
+        function mouseOverHandler (event) {
+            let el = event.currentTarget;
+            while (el) {
+                if (!el.classList.contains(goldenClass)) {
+                    el.classList.add(goldenClass);
+                }
+                el = el.previousElementSibling;
             }
+        };
+
+        function mouseOutHandler (event) {
+            let el = event.currentTarget;
+            while (el) {
+                if (el.classList.contains(goldenClass)) {
+                    el.classList.remove(goldenClass);
+                }
+                el = el.previousElementSibling;
+            }
+        };
+
+        let arr = document.querySelectorAll('i');
+        arr.forEach(function (i) {
+            i.addEventListener('mouseover', mouseOverHandler);
+            i.addEventListener('mouseout', mouseOutHandler);
         });
 
-        firstStar.addEventListener('mouseout', function() {
-            firstStar.classList.remove(goldenClass);
-        });
     </script>
 </body>
 </html>
