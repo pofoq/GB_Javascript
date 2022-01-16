@@ -19,6 +19,16 @@
         let targetAttr = "_blank";
         let linkText = "ссылка";
 
+        document.body.insertAdjacentHTML('afterbegin', `<a href="${url}" target="${targetAttr}">${linkText}</a>`);
+
+        document.body.insertAdjacentHTML('beforeend', '<br />');
+
+        let a = document.createElement('a');
+        a.setAttribute('href', url);
+        a.setAttribute('target', targetAttr);
+        a.innerText = linkText;
+        document.body.insertAdjacentHTML('beforeend', a.outerHTML);
+
     </script>
 </body>
 </html>
