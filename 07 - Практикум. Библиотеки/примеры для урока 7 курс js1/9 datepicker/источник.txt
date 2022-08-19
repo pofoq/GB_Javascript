@@ -1,1 +1,0 @@
-https://github.com/mymth/vanillajs-datepicker#readme
