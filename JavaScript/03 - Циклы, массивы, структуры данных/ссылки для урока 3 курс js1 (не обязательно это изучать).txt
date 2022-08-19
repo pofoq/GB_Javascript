@@ -1,0 +1,39 @@
+﻿Циклы и итерации
+	https://mzl.la/2OSeEqr
+	
+Массивы
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array
+	
+Методы массивов (слева в навигации)
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array#
+
+Методы массивов
+	https://learn.javascript.ru/array-methods
+
+Методы "строк"(объект String)
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String
+	
+Статья "О выборе структур данных для начинающих" (C, C++, Java, C#)
+	https://habr.com/post/339656/
+	
+Статья "Зачем они нужны в JavaScript? Symbol, Iterator, Generator"	
+	https://bit.ly/2Q8Po3U
+	
+Правила оформления кода
+	https://ymatuhin.ru/front-end/javascript_styleguide/
+
+Визуализация алгоритмов сортировки
+	https://youtu.be/Gnp8G1_kO3I
+	https://youtu.be/y9Ecb43qw98
+
+Типы set, map, weakset, weakmap
+	https://webdevblog.ru/kollekcii-javascript-set-and-map/
+
+Object.freeze для "заморозки" объектов
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
+
+Array intersection, difference, and union in ES6
+	https://medium.com/@alvaro.saburido/set-theory-for-arrays-in-es6-eb2f20a61848
+
+Метки циклов
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/label

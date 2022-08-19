@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        let transport = {
+            year: 2021,
+        };
+
+        function Car(model, color) {
+            this.model = model;
+            this.color = color;
+        }
+
+        Car.prototype = transport;
+
+        const car1 = new Car('Ford', 'blue');
+        const car2 = new Car('Toyota', 'white');
+        console.log(Object.getPrototypeOf(car1) === Object.getPrototypeOf(car2));//true
+    </script>
+</body>
+</html>
