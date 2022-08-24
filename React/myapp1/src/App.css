@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.Message_list {
+  display: flex;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.Message_box {
+  color: black;
+  min-width: 50px;
+}
+
+.Message_Author {
+  color: crimson;
+}
